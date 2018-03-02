@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 26 Dec, 2017 3:02:15 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.colgmgmnt.entity.College" table="COLLEGE">
+        <id name="collegeId" type="int">
+            <column name="COLLID" />
+            <generator class="assigned" />
+        </id>
+        <property name="collegeName" type="java.lang.String">
+            <column name="COLLNAME" />
+        </property>
+        <property name="estd" type="java.lang.String">
+            <column name="ESTD" />
+        </property>
+        <property name="zip" type="int">
+            <column name="ZIP" />
+        </property>
+        <property name="stateId" type="java.lang.String">
+            <column name="STATE_ID" />
+        </property>
+        <property name="distId" type="java.lang.String">
+            <column name="DIST_ID" />
+        </property>
+    </class>
+</hibernate-mapping>

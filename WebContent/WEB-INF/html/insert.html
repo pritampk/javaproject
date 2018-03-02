@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Insert</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<script src="bootstrap.js"></script>
+<script src="jquery-3.2.1.js"></script>
+  
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<div class="container">
+    <h1 style = 'color:green'>Insert College Details</h1>
+    <br>    
+         <div>
+         <form action="http://localhost:8081/CollegeManagement/manage" method="post">
+             <div class ="col-md-12">
+                <label  class ="col-md-2" >College Id :</label>
+                    <input style= "width :326px;"  class="form-control col-md-7" type="text" id="collegeId" />
+             </div>
+             <br></br>
+             <div class ="col-md-12">
+                <label  class="col-md-2" >College Name :</label>
+                    <input style="width:326px;" class="form-control col-md-7" type="text" id="collegeName" />
+             </div>
+             <br></br>
+              <div class ="col-md-12">
+                <label class="col-md-2" >Estd :</label>
+                    <input style="width:326px;" class="form-control col-md-7" type="text" id="estd" />
+              </div>
+              <br></br>
+              <div class ="col-md-12">
+                <label class="col-md-2">Zip Code :</label>
+                    <input style="width:326px;" class="form-control" type="text" id="zipCode" />
+              </div>
+              <br></br>
+              <input type="text" name="choice" value="1" hidden="true">
+             <button id="Submit" value="button"  type ="submit" class="btn btn-primary btn-sm"> SUBMIT</button>
+         </form>
+         </div>           
+     </div>
+     <script>
+     $(document).ready(function(){
+     	$('#estd').datepicker();
+     })
+     </script>
+</body>
+</html>

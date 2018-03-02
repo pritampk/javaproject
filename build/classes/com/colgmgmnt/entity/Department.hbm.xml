@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 26 Dec, 2017 3:02:15 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.colgmgmnt.entity.Department" table="DEPARTMENT">
+        <id name="deptId" type="java.lang.String">
+            <column name="DEPTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="deptName" type="java.lang.String">
+            <column name="DEPTNAME" />
+        </property>
+        <property name="strength" type="int">
+            <column name="STRENGTH" />
+        </property>
+        <property name="placement" type="int">
+            <column name="PLACEMENT" />
+        </property>
+        <property name="collegeId" type="int">
+            <column name="COLLEGEID" />
+        </property>
+    </class>
+</hibernate-mapping>
